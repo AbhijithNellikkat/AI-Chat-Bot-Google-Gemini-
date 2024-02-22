@@ -94,6 +94,7 @@ class _ChatBotState extends State<ChatBot> {
       body: DashChat(
         typingUsers: typing,
         currentUser: chatUser,
+
         onSend: (message) {
           getData(chatMessage: message);
           log("Send");
@@ -108,6 +109,7 @@ class _ChatBotState extends State<ChatBot> {
             );
           },
         ),
+
         inputOptions: InputOptions(
           alwaysShowSend: true,
           cursorStyle: const CursorStyle(color: Colors.black),
